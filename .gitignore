@@ -141,3 +141,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Antigravity
+.agents
+
+# Spec-kit
+.specify
+!.specify/memory
+
+# LLMs
+AGENTS.md

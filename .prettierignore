@@ -1,0 +1,10 @@
+# Ignore artifacts:
+.vscode
+.pnpm.lock.yaml
+node_modules
+dist
+engines
+*.md
+tsconfig.json
+tsconfig.*.json
+docs

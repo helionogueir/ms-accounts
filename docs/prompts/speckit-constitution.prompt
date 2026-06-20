@@ -1,0 +1,20 @@
+/speckit.constitution Create the project constitution file.
+
+CRITICAL AND ABSOLUTE RULE: Do not copy, summarize, or rewrite the content of our engineering guidelines inside the constitution. 
+
+The constitution must act strictly as a reference index (pointers). Write clear and explicit rules that force any AI agent to READ the original files whenever it needs to make technical decisions during the plan or implement phases.
+
+Instruct the AI to always load and read the following files to get the project context:
+- Context and Overview: Read the `README.md` at the root of the project.
+- Architecture: Read @docs/guidelines/application-architecture.md
+- Security: Read @docs/guidelines/security.md
+- Testing Strategy (TDD): Read @docs/guidelines/application-unit-tests.md
+- Database Performance and I/O: Read @docs/guidelines/application-performance.md
+- Caching Strategy (Redis): Read @docs/guidelines/application-caching.md
+- Clean Code and Maintainability: Read @docs/guidelines/application-readability-maintainability.md
+- RESTful Patterns and Payload: Read @docs/guidelines/api-design.md
+- Bug Prevention and Typing: Read @docs/guidelines/application-correctness.md
+- Logs, Tracing, and Metrics: Read @docs/guidelines/application-observability.md
+- Internationalization (i18next): Read @docs/guidelines/application-i18n.md
+
+Add a final warning in the constitution: "Before starting the planning (/speckit.plan) or implementation (/speckit.implement) phases, the AI MUST inspect the relevant .md files listed above to ensure the generated code is 100% compliant with our strict architectural and engineering standards."
